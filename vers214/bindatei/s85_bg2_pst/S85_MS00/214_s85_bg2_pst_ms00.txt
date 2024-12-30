@@ -1,0 +1,1633 @@
+
+
+Dienstag, 15. Apr 2003, 18:45 Vers214 S85_BG2_PST_Master_081
+
+abgeleitet aus Fahrzeugdatenstand 081
+
+
+
+Mittwoch, 16. Apr 2003, 8:45 Vers214 S85_BG2_PST_Master_082
+
+Abstand des Klopffensters vom Zündwinkel ab 5500 40 statt 30 Grad KW
+
+
+
+Mittwoch, 23. Apr 2003, 13:20 Vers214 S85_BG2_PST_Master_083
+
+KF_PKSR_TV_QSOLL_PSOLL für 2 EKP parallel appliziert
+
+K_PWG_NORM von 33 auf 25%
+
+KF_EGAS_SOLL_AQ ab rf 0.65 rf-Stützstellen um ca 4% erhöht zum anfetten
+
+Korrektur der Einspritzung von Timmi (Offset -0.26ms)
+KL_TI_SOLL_QSTAT_F proportionaler Ventilparameter Device1 - Physikalisches Modell
+	pdiff  [bar]
+	2.000	3.000	3.500	4.000	4.500	5.000	5.500	6.500	
+	KL_TI_SOLL_QSTAT_F proportionaler Ventilparameter [mg/ms]
+	2.876	3.327	3.551	3.775	3.998	4.220	4.442	4.884	
+f2	2.616	3.067	3.291	3.516	3.738	3.960	4.183	4.624	
+
+
+
+
+Donnerstag, 24. Apr 2003 13.10 Vers214_S85_BG2_PST_Master_093
+
+BG2-Kennfelder aus e60_093 hinzu
+
+
+
+Donnerstag, 24. Apr 2003, 13:34 Vers214_S85_BG2_PST_Master_094
+für Betrieb am Motorprüfstand ausgeschaltet:
+	K_TMOT_OBD_CFG Einschalten der Diagnose Device2 [-] - Parameter
+	OBD ein	01	
+f2	OBD aus	00	
+
+
+
+Freitag, 25. Apr 2003, 09:18 Vers214_S85_BG2_PST_Master_095
+Fehler in Kennlinie bei Lambdawert 1.005
+	KL_LAM_IST IST-Lambda Device1 - Physikalisches Modell
+	1	1	24	
+
+	lavk_ip_korr  [mA]
+	-2.0898	-1.4844	-1.1328	-0.8008	-0.4980	-0.4492	-0.3906	-0.3418	-0.2832	-0.2344	-0.1855	-0.1367	-0.0879	-0.0488	-0.0098	0.0000	0.0391	0.0586	0.0781	0.0977	0.2051	0.3516	0.7129	1.3965	
+
+	KL_LAM_IST IST-Lambda [-]
+	0.680	0.750	0.800	0.850	0.900	0.910	0.920	0.930	0.940	0.950	0.960	0.970	0.978	0.990	1.000	1.050	1.020	1.030	1.040	1.050	1.100	1.180	1.430	2.420	
+f2																1.005	
+
+
+
+Montag, 28. Apr 2003, 18:03 Vers214_S85_BG2_PST_Master_096
+
+analog Fahrzeugstand_MS96:
+	KF_MD_IND_OPT optimales Moment bei LA 1 Device2 - Physikalisches Modell
+	1	12	18	
+
+	rf_m relative Fuellung Mittel zwischen Bank 1 und 2 [-]
+
+		n Motordrehzahl [Upm]
+		600	800	1000	1600	2200	2800	2900	3200	3400	3700	4100	4500	5000	5600	6100	6500	6900	8000	
+
+		KF_MD_IND_OPT optimales Moment bei LA 1 [Nm]
+	0.000	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	
+	0.100	55.0	56.8	53.6	54.3	54.2	55.9	56.4	56.5	56.0	55.7	55.5	55.3	56.0	54.6	53.0	53.0	53.0	53.0	
+f2		56.8	
+	0.200	110.0	106.1	100.5	96.8	82.7	98.5	101.9	106.7	100.5	101.5	94.1	97.2	94.4	90.4	105.0	105.0	105.0	105.0	
+f2		106.1	
+	0.300	148.0	157.1	155.9	165.9	152.8	161.1	161.9	163.8	161.7	165.0	163.5	168.0	164.6	164.5	160.8	155.0	155.0	155.0	
+f2		157.1	
+	0.400	205.0	208.1	203.8	218.8	204.4	209.5	210.2	215.0	224.9	222.8	225.0	224.8	222.9	227.1	227.8	227.7	196.8	194.0	
+f2		208.1																227.7	227.7	
+	0.500	230.0	260.2	282.7	270.4	266.0	278.6	278.6	283.2	282.2	280.3	281.2	280.5	276.8	287.4	284.6	280.9	281.5	284.0	
+f2		260.2																280.9	280.9	
+	0.600	289.3	312.2	315.1	319.0	313.9	329.8	326.4	336.7	333.3	335.0	336.6	334.4	333.4	343.0	341.7	337.0	342.3	345.0	
+f2		312.2																337.0	337.0	
+	0.700	340.4	343.8	344.7	377.2	371.9	375.6	371.6	388.6	381.5	384.6	385.8	384.2	386.1	395.4	399.0	395.1	389.9	378.0	
+f2		377.2	377.2	377.2			399.0											395.1	395.1	
+	0.800	344.0	373.0	391.0	397.1	405.0	412.6	413.8	434.1	438.9	431.9	442.2	439.6	442.8	453.0	455.4	459.1	440.0	440.0	
+f2		422.3	422.3	422.3	422.3	446.4	454.3	456.0	466.2	469.4	469.7	477.3	476.9	483.6	494.2	498.8	493.9	493.9	493.9	
+	0.900	384.0	404.0	430.0	429.4	451.4	462.3	464.0	467.5	469.4	473.6	481.2	492.6	493.2	495.0	495.0	495.0	495.0	495.0	
+f2		475.1	475.1	475.1	475.1	502.2	514.0	516.0	524.4	528.0	528.4	533.6	536.9	544.0	551.4	554.6	566.5	572.9	569.9	
+	1.000	424.0	446.0	477.0	461.6	497.7	512.0	514.0	517.6	519.2	524.0	533.7	548.0	547.5	550.0	550.0	550.0	550.0	550.0	
+f2		522.6	522.6	522.6	522.6	552.4	565.4	567.6	576.8	580.8	581.2	587.0	590.6	598.4	612.6	616.2	629.4	636.5	633.3	
+	1.200	501.8	531.2	571.0	526.1	590.5	611.5	614.3	622.4	627.8	641.8	658.3	656.1	650.0	650.0	650.0	650.0	650.0	650.0	
+f2	1.100	574.9	574.9	574.9	574.9	607.6	621.9	624.4	634.5	638.9	639.3	645.7	649.7	658.2	673.9	677.8	692.3	700.2	696.6	
+
+
+
+
+
+
+Beginn des automatischen Vergleichs am Thu May  8 16:27:11 2003:
+ 
+	K_LAVK_OBD_TL_CFG Freigabe OBD-TL/VL-Diagnose Device1 [-] - Parameter
+	OBD-TL/VL aktiv	0001	
+f2	OBD-TL/VL inaktiv	0000	
+
+ 
+	K_PKS_ERSATZ Ersatzwert Kraftstoffdruck Device1 [bar] - Parameter
+	6.000	1770	
+f2	7.000	1B58	
+
+
+Ende des automatischen Vergleichs gestartet am Thu May  8 16:27:11 2003
+
+Donnerstag, 8. Mai 2003, 16:27 S85_BG2_PST MS97
+modified on Donnerstag, 8. Mai 2003, 16:27 S85_BG2_PST to MS98
+
+
+
+
+Beginn des automatischen Vergleichs am Thu May  8 16:43:30 2003:
+Prüfstandsdaten für IAV wieder zurückgesetzt
+	K_KIS_CFG KIS-Konfiguration Device2 [-] - Parameter
+	Senden	01	
+f2	Aus	00	
+
+ 
+	K_PWG1_NORM Normierung Potentiometerspannung - %-Pedalwert 1 Device2 [%/V] - Parameter
+	35.000	0DAC	
+f2	25.000	09C4	
+
+Ende des automatischen Vergleichs gestartet am Thu May  8 16:43:30 2003
+
+Donnerstag, 8. Mai 2003, 16:43 S85_BG2_PST MS98
+modified on Donnerstag, 8. Mai 2003, 16:43 S85_BG2_PST to MS99
+
+
+
+
+
+
+
+S85_BG2_PST_MS99 modified on Donnerstag, 8. Mai 2003, 16:43 to  S85_BG2_PST_MS00
+
+Element         K_APP_UGEN  / _MSS65-inj (3)
+Langbezeichner  Umschaltung auf manuelle Generatorspannungsvorgabe
+Typ             CONSTANT
+Funktionen      UGENKOR
+Gruppen         NO_GROUP
+Einheit         [-]
+
+       0
+       1*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_CAN_CHKSUM_ERR_MAX  / _MSS65-inj (3)
+Langbezeichner  Schwelle Chksum-Error
+Typ             CONSTANT
+Funktionen      PTCAN-Interface
+Gruppen         NO_GROUP
+Einheit         [-]
+
+      15
+       5*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_EGAS_SK_SOLL_DIFF  / _MSS65-ign (3)
+Langbezeichner  max. Differenz Sollwertabweichung
+Typ             CONSTANT
+Funktionen      Egas
+Gruppen         NO_GROUP
+Einheit         [%]
+
+     5,0
+    10,0*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_J_MOTOR  / _MSS65-ign (3)
+Langbezeichner  Trägheitsmoment Motor
+Typ             CONSTANT
+Funktionen      Leerlaufregler
+Gruppen         NO_GROUP
+Einheit         [Nms2]
+
+    0,45
+    0,35*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_KATS_TABG_AKTIV  / _MSS65-inj (3)
+Langbezeichner  Schwelle fuer Katschutz
+Typ             CONSTANT
+Funktionen      Katschutz
+Gruppen         NO_GROUP
+Einheit         [°C]
+
+   720,0
+   700,0*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_KH_T_MAX  / _MSS65-ign (3)
+Langbezeichner  Maximale Katheizzeit
+Typ             CONSTANT
+Funktionen      Kh
+Gruppen         NO_GROUP
+Einheit         [s]
+
+     300
+     200*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_KH_TKAT_ENDE  / _MSS65-ign (3)
+Langbezeichner  Temperaturschwelle fuer Katheizende
+Typ             CONSTANT
+Funktionen      Kh
+Gruppen         NO_GROUP
+Einheit         [°C]
+
+   400,0
+   350,0*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_LAA_OFFS_RF_MAX  / _MSS65-inj (3)
+Langbezeichner  max. relative Füllung f. Offset-LAA
+Typ             CONSTANT
+Funktionen      Lambda
+Gruppen         NO_GROUP
+Einheit         [-]
+
+   0,200
+   0,240*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_LAVK_OBD_TL_CFG  / _MSS65-inj (3)
+Langbezeichner  Freigabe OBD-TL/VL-Diagnose
+Typ             CONSTANT
+Funktionen      LAVK-OBD
+Gruppen         NO_GROUP
+Einheit         [-]
+
+    0,00
+    1,00*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_LLR_AD_CFG  / _MSS65-ign (3)
+Langbezeichner  Konfiguration
+Typ             CONSTANT
+Funktionen      Leerlaufregleradaption
+Gruppen         NO_GROUP
+Einheit         [-]
+
+    0,00
+    1,00*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_MD_BEZUG_RAMPE  / _MSS65-ign (3)
+Langbezeichner  Eta-Bezugsrampe
+Typ             CONSTANT
+Funktionen      Momentenmanager
+Gruppen         NO_GROUP
+Einheit         [Nm/s]
+
+     100
+     500*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_MD_CFG_ETA_KOMP  / _MSS65-ign (3)
+Langbezeichner  Eta-Kompensation
+Typ             CONSTANT
+Funktionen      Momentenmanager
+Gruppen         NO_GROUP
+Einheit         [-]
+
+    0,00
+    5,00*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_MD_DELTA_SA  / _MSS65-ign (3)
+Langbezeichner  SA-Delta zum Schleppmoment
+Typ             CONSTANT
+Funktionen      Momentenmanager
+Gruppen         NO_GROUP
+Einheit         [Nm/5ms]
+
+    -0,4
+    -0,2*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_MD_DELTA_WE  / _MSS65-ign (3)
+Langbezeichner  WE-Delta zum Reibmoment
+Typ             CONSTANT
+Funktionen      Momentenmanager
+Gruppen         NO_GROUP
+Einheit         [Nm/5ms]
+
+     0,8
+     0,4*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_MD_ETA_ZW_MIN  / _MSS65-ign (3)
+Langbezeichner  minimales ETA
+Typ             CONSTANT
+Funktionen      Momentenmanager
+Gruppen         NO_GROUP
+Einheit         [%]
+
+    55,0
+    10,0*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_MD_HYS_SA  / _MSS65-ign (3)
+Langbezeichner  Offset auf Schleppmoment inkl. EtaMin
+Typ             CONSTANT
+Funktionen      Momentenmanager
+Gruppen         NO_GROUP
+Einheit         [Nm]
+
+    10,0
+    50,0*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_MD_HYS_SA_TZ  / _MSS65-ign (3)
+Langbezeichner  Offset auf tz_min
+Typ             CONSTANT
+Funktionen      Momentenmanager
+Gruppen         NO_GROUP
+Einheit         [°KW]
+
+     0,0
+     3,0*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SA_MD_IND_NE_MIN  / _MSS65-inj (3)
+Langbezeichner  absolute md-Schwelle fuer Aktivierung der SA
+Typ             CONSTANT
+Funktionen      sa_we
+Gruppen         NO_GROUP
+Einheit         [Nm]
+
+    40,0
+     0,0*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SMG_ADAPT_SP_DMD_FW  / _MSS65-ign (3)
+Langbezeichner  Sperre ueber Gradient
+Typ             CONSTANT
+Funktionen      SMG
+Gruppen         NO_GROUP
+Einheit         [Nm/s]
+
+       0
+      60*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SMG_CAN_ED_TSPERR  / _MSS65-ign (3)
+Langbezeichner  max. Zeit für CAN-Chksum
+Typ             CONSTANT
+Funktionen      SMG
+Gruppen         NO_GROUP
+Einheit         [s]
+
+  172,32
+    2,00*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SMG_CHKSUM_ERR_MAX  / _MSS65-ign (3)
+Langbezeichner  max. Zeit für CAN-Chksum
+Typ             CONSTANT
+Funktionen      SMG
+Gruppen         NO_GROUP
+Einheit         [-]
+
+       7
+       5*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SMG_KI_AKS_AY_MAX  / _MSS65-ign (3)
+Langbezeichner  keine AKS in Kurven
+Typ             CONSTANT
+Funktionen      SMG
+Gruppen         NO_GROUP
+Einheit         [m/(s*s)]
+
+    3,50
+   10,00*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SMG_KI_NEU_AY_MAX  / _MSS65-ign (3)
+Langbezeichner  kein Aktualisieren der KI bei hohen ay
+Typ             CONSTANT
+Funktionen      SMG
+Gruppen         NO_GROUP
+Einheit         [m/(s*s)]
+
+    3,50
+   10,00*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SMG_KUPP_DM_SOLL_F  / _MSS65-ign (3)
+Langbezeichner  Faktor auf Gradient
+Typ             CONSTANT
+Funktionen      SMG
+Gruppen         NO_GROUP
+Einheit         [-]
+
+    1,00
+    0,50*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SMG_KUPP_M_MAX_1  / _MSS65-ign (3)
+Langbezeichner  Max. Schubmoment im 1.Gang
+Typ             CONSTANT
+Funktionen      SMG
+Gruppen         NO_GROUP
+Einheit         [Nm]
+
+    40,0
+    80,0*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SMG_KUPP_M_MAX_2  / _MSS65-ign (3)
+Langbezeichner  Max. Schubmoment im 2.Gang
+Typ             CONSTANT
+Funktionen      SMG
+Gruppen         NO_GROUP
+Einheit         [Nm]
+
+    60,0
+   120,0*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SMG_MOT_DN_REG_I_N  / _MSS65-ign (3)
+Langbezeichner  I-Anteil des Gradientenreglers
+Typ             CONSTANT
+Funktionen      SMG
+Gruppen         NO_GROUP
+Einheit         [Nms/Upm]
+
+  0,0060
+  0,0006*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SMG_MOT_DN_REG_I_P  / _MSS65-ign (3)
+Langbezeichner  I-Anteil des Gradientenreglers
+Typ             CONSTANT
+Funktionen      SMG
+Gruppen         NO_GROUP
+Einheit         [Nms/Upm]
+
+  0,0003
+  0,0002*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SMG_MOT_DN_REG_I_S  / _MSS65-ign (3)
+Langbezeichner  I-Anteil des Gradientenreglers
+Typ             CONSTANT
+Funktionen      SMG
+Gruppen         NO_GROUP
+Einheit         [Nms/Upm]
+
+  0,0004
+  0,0006*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SMG_MOT_M_RES_RAMPE  / _MSS65-ign (3)
+Langbezeichner  Reserve-Rampe
+Typ             CONSTANT
+Funktionen      SMG
+Gruppen         NO_GROUP
+Einheit         [Nm/s]
+
+     100
+      20*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SMG_MOT_M_RES_RAMPE_KS  / _MSS65-ign (3)
+Langbezeichner  Reserve-Rampe bei Kupplungsschlupf
+Typ             CONSTANT
+Funktionen      SMG
+Gruppen         NO_GROUP
+Einheit         [Nm/s]
+
+     150
+     100*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SMG_MOT_M_RES_T_MAX  / _MSS65-ign (3)
+Langbezeichner  max. Zeit fuer Momentenreserve
+Typ             CONSTANT
+Funktionen      SMG
+Gruppen         NO_GROUP
+Einheit         [s]
+
+    3,00
+    6,00*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SMG_MOT_M_VOR_AUF  / _MSS65-ign (3)
+Langbezeichner  Vorausschau
+Typ             CONSTANT
+Funktionen      SMG
+Gruppen         NO_GROUP
+Einheit         [s]
+
+    0,60
+    0,00*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SMG_MOT_N_REG_I  / _MSS65-ign (3)
+Langbezeichner  I-Anteil n-Regler
+Typ             CONSTANT
+Funktionen      SMG
+Gruppen         NO_GROUP
+Einheit         [Nm/Upm]
+
+   0,003
+   0,001*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SMG_MOT_N_REG_I_SCHW  / _MSS65-ign (3)
+Langbezeichner  max. Regeldifferenz-Schwelle fuer I-Anteil (n-Regler)
+Typ             CONSTANT
+Funktionen      SMG
+Gruppen         NO_GROUP
+Einheit         [Upm]
+
+     180
+     300*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SMG_MOT_N_REG_I_T  / _MSS65-ign (3)
+Langbezeichner  t-Schwelle
+Typ             CONSTANT
+Funktionen      SMG
+Gruppen         NO_GROUP
+Einheit         [s]
+
+    0,60
+    0,40*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SMG_MOT_N_REG_M_MAX  / _MSS65-ign (3)
+Langbezeichner  max. Reglermoment
+Typ             CONSTANT
+Funktionen      SMG
+Gruppen         NO_GROUP
+Einheit         [Nm]
+
+    30,0
+   120,0*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SMG_MOT_N_REG_T_MAX  / _MSS65-ign (3)
+Langbezeichner  Zeit
+Typ             CONSTANT
+Funktionen      SMG
+Gruppen         NO_GROUP
+Einheit         [s]
+
+    0,40
+    0,80*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SMG_N_ZIEL_HYS  / _MSS65-ign (3)
+Langbezeichner  max. Drehzahldifferenz
+Typ             CONSTANT
+Funktionen      SMG
+Gruppen         NO_GROUP
+Einheit         [Upm]
+
+     500
+     200*
+
+Inhaltliche Aenderung
+
+
+
+Element         K_SMG_SK_CONTROL  / _MSS65-ign (3)
+Langbezeichner  Config fuer Handschalter
+Typ             CONSTANT
+Funktionen      SMG
+Gruppen         NO_GROUP
+Einheit         [-]
+
+    0,00
+    1,00*
+
+Inhaltliche Aenderung
+
+
+
+Element         KF_AUSS_OBD_WICHT_KAT  / _MSS65-ign (3)
+Langbezeichner  Gewichtung Katschaedigen.
+Typ             2D_MAP
+Funktionen      Aussetzererkennung
+Gruppen         NO_GROUP
+x (8 Werte)        n  [Upm]
+y (5 Werte)        rf  [-]
+Einheit         [-]
+
+     Y\X   |     500       1000       2000       3000       3500       4000       5000       7000   
+           |                                                                                        
+-----------+----------------------------------------------------------------------------------------
+   0,300   |    0,30       0,30       0,30       0,30       0,30       0,30       0,30       0,30   
+           |    0,01*      0,01*      0,01*      0,01*      0,01*      0,02*      0,04*      0,05*  
+....................................................................................................
+   0,400   |    0,30       0,30       0,30       0,30       0,30       0,30       0,30       0,30   
+           |    0,01*      0,01*      0,01*      0,02*      0,02*      0,03*      0,05*      0,08*  
+....................................................................................................
+   0,600   |    0,30       0,30       0,30       0,30       0,30       0,30       0,30       0,30   
+           |    0,01*      0,02*      0,02*      0,02*      0,02*      0,04*      0,07*      0,09*  
+....................................................................................................
+   0,800   |    0,30       0,30       0,30       0,30       0,30       0,30       0,30       0,30   
+           |    0,02*      0,03*      0,04*      0,05*      0,06*      0,07*      0,09*      0,12*  
+....................................................................................................
+   1,000   |    0,30       0,30       0,30       0,30       0,30       0,30       0,30       0,30   
+           |    0,03*      0,04*      0,05*      0,06*      0,07*      0,09*      0,10*      0,15*  
+....................................................................................................
+
+Inhaltliche Aenderung
+
+
+
+Element         KF_EGAS_SOLL_AQ  / _MSS65-ign (3)
+Langbezeichner  AQ-Sollwert pro Bank
+Typ             2D_MAP
+Funktionen      Egas
+Gruppen         NO_GROUP
+x (22 Werte)       n  [Upm]
+y (18 Werte)       rf_soll  [-]
+Einheit         [qmm]
+
+     Y\X   |     100        300        600        800       1050       1200       1600       2200       2800       2900   
+           |                                                                                                              
+-----------+--------------------------------------------------------------------------------------------------------------
+   0,000   |     0,0        0,0        0,0        0,0        0,0        0,0        0,0        0,0        0,0        0,0   
+           |                                                                                                              
+..........................................................................................................................
+   0,050   |     0,6        1,7        2,5        3,5        6,0        7,0        8,0       12,0       17,5       18,4   
+           |                                                                                                              
+..........................................................................................................................
+   0,100   |     1,1        3,4        5,0        7,5       10,0       12,2       14,4       19,3       22,4       23,3   
+           |                                                                                                              
+..........................................................................................................................
+   0,150   |     1,4        4,2        8,0       10,0       19,4       22,7       26,1       36,2       43,0       43,0   
+           |                                                                                                              
+..........................................................................................................................
+   0,200   |     2,4        7,3       13,0       16,0       23,7       28,8       41,6       57,4       77,1       79,4   
+           |                                                                                                              
+..........................................................................................................................
+   0,300   |     3,5       10,4       21,0       27,0       45,9       53,2       78,5      105,4      126,8      128,9   
+           |                                                                                                              
+..........................................................................................................................
+   0,400   |     6,2       18,9       35,0       43,8       78,9      101,6      129,1      152,1      183,2      187,1   
+           |                                                                                                              
+..........................................................................................................................
+   0,500   |    17,7       44,5      100,0      130,0      124,7      141,8      180,0      217,9      263,2      280,6   
+           |                                                                                                              
+..........................................................................................................................
+   0,600   |    24,7       54,3      150,0      220,0      171,9      174,0      221,4      280,0      380,0      400,0   
+           |                                                                                                              
+..........................................................................................................................
+   0,650   |    41,1       90,9      250,0      230,0      180,0      210,0      581,7      600,0      632,9      875,7   
+           |                                                                                                              
+..........................................................................................................................
+   0,700   |   150,0      200,0      320,0      300,0      250,0      488,6      625,5      900,0     1100,0     1700,0   
+           |                                                                                                     1200,0*  
+..........................................................................................................................
+   0,750   |   300,0      330,0      500,0      500,0      360,0      781,8      680,0      987,8     1200,0     2069,3   
+           |                                                                                                     1700,0*  
+..........................................................................................................................
+   0,800   |   300,0      390,7      558,5      800,0     1000,0     1021,8     1053,6     1243,5     1437,3     2069,3   
+           |                                                                                          1600,0*    1700,0*  
+..........................................................................................................................
+   0,850   |   300,0      390,7      558,5      800,0     1000,0     1048,0     1096,9     1243,5     1437,3     2069,3   
+           |                                                                                          1600,0*    1700,0*  
+..........................................................................................................................
+   0,900   |   300,0      390,7      558,5      800,0     1000,0     1048,0     1096,9     1243,5     1437,3     2069,3   
+           |                                                                                          1600,0*    1700,0*  
+..........................................................................................................................
+   0,950   |   300,0      390,7      558,5      800,0     1000,0     1058,0     1096,9     1243,5     1437,3     2069,3   
+           |                                                                                          1600,0*    1700,0*  
+..........................................................................................................................
+   1,000   |   300,0      390,7      558,5      800,0     1000,0     1048,0     1096,9     1243,5     1437,3     2069,3   
+           |                                                                                          1600,0*    1700,0*  
+..........................................................................................................................
+   1,050   |   300,0      390,7      558,5      800,0     1000,0     1048,0     1096,9     1243,5     1437,3     2069,3   
+           |                                                                                          1600,0*    1700,0*  
+..........................................................................................................................
+
+     Y\X   |    3200       3700       4100       4500       5000       5600       6100       6500       6900       7500   
+           |                                                                                                              
+-----------+--------------------------------------------------------------------------------------------------------------
+   0,000   |     0,0        0,0        0,0        0,0        0,0        0,0        0,0        0,0        0,0        0,0   
+           |                                                                                                              
+..........................................................................................................................
+   0,050   |    22,3       26,9       23,4       27,0       32,0       35,0       48,0       50,0       50,0       52,0   
+           |                                                                                                              
+..........................................................................................................................
+   0,100   |    36,5       47,5       47,3       54,0       67,5       73,6       96,6       98,0      100,0      102,0   
+           |                                                                                                              
+..........................................................................................................................
+   0,150   |    53,6       66,8       73,9       87,1       96,8       99,5      102,8      115,2      120,0      120,0   
+           |                                                                                                              
+..........................................................................................................................
+   0,200   |    89,1      104,2      110,4      115,4      120,9      133,6      140,3      153,3      170,0      191,8   
+           |                                                                                                              
+..........................................................................................................................
+   0,300   |   136,3      153,5      170,3      175,0      185,8      197,8      222,0      225,5      230,0      249,7   
+           |                                                                                                              
+..........................................................................................................................
+   0,400   |   207,8      232,0      253,4      267,3      275,5      291,2      321,6      332,3      339,5      389,9   
+           |                                                                                                              
+..........................................................................................................................
+   0,500   |   305,5      324,0      360,0      360,0      360,0      370,0      420,4      456,0      450,0      470,0   
+           |                                                                                                              
+..........................................................................................................................
+   0,600   |   505,1      456,3      450,0      420,0      450,0      500,0      501,3      540,2      551,0      591,0   
+           |                                                                                                              
+..........................................................................................................................
+   0,650   |   600,0      500,0      520,0      510,0      530,0      610,0      577,5      604,4      620,0      639,1   
+           |                                                                                                              
+..........................................................................................................................
+   0,700   |  1000,0      550,0      550,0      560,0      580,0      660,0      658,8      702,9      700,0      725,9   
+           |                                                                                                              
+..........................................................................................................................
+   0,750   |  1900,0     1300,0     1300,0      590,0      650,0      700,0      743,9      771,7      802,9      827,1   
+           |                                                                                                              
+..........................................................................................................................
+   0,800   |  2069,3     1500,0     1650,0     1000,0      750,0      850,0      862,6      898,2      900,0      950,0   
+           |                                                                                                              
+..........................................................................................................................
+   0,850   |  2069,3     2069,3     2069,3     1800,0     1300,0     1000,0     1050,0     1026,3     1050,7     1070,0   
+           |                                                                                                              
+..........................................................................................................................
+   0,900   |  2069,3     2069,3     2069,3     2069,3     2000,0     1200,0     1259,9     1156,6     1215,0     1200,0   
+           |                                                                                                              
+..........................................................................................................................
+   0,950   |  2069,3     2069,3     2069,3     2069,3     2069,3     2069,3     1400,0     1400,0     1400,0     1400,0   
+           |                                                                                                              
+..........................................................................................................................
+   1,000   |  2069,3     2069,3     2069,3     2069,3     2069,3     2069,3     2069,3     2069,3     2069,3     2069,3   
+           |                                                                                                              
+..........................................................................................................................
+   1,050   |  2069,3     2069,3     2069,3     2069,3     2069,3     2069,3     2069,3     2069,3     2069,3     2069,3   
+           |                                                                                                              
+..........................................................................................................................
+
+     Y\X   |    8000       8500   
+           |                      
+-----------+----------------------
+   0,000   |     0,0        0,0   
+           |                      
+..................................
+   0,050   |    52,7       54,5   
+           |                      
+..................................
+   0,100   |   112,2      117,3   
+           |                      
+..................................
+   0,150   |   133,0      139,5   
+           |                      
+..................................
+   0,200   |   211,0      220,6   
+           |                      
+..................................
+   0,300   |   276,7      290,2   
+           |                      
+..................................
+   0,400   |   430,9      451,4   
+           |                      
+..................................
+   0,500   |   491,0      519,2   
+           |                      
+..................................
+   0,600   |   601,8      641,3   
+           |                      
+..................................
+   0,650   |   733,0      780,0   
+           |                      
+..................................
+   0,700   |   842,5      900,8   
+           |                      
+..................................
+   0,750   |   948,8     1009,7   
+           |                      
+..................................
+   0,800   |  1000,0     1100,0   
+           |                      
+..................................
+   0,850   |  1070,0     1070,0   
+           |                      
+..................................
+   0,900   |  1200,0     1200,0   
+           |                      
+..................................
+   0,950   |  1400,0     1400,0   
+           |                      
+..................................
+   1,000   |  2069,3     2069,3   
+           |                      
+..................................
+   1,050   |  2069,3     2069,3   
+           |                      
+..................................
+
+Inhaltliche Aenderung
+
+
+
+Element         KF_KH_TZ_N_RF_OFFS  / _MSS65-ign (3)
+Langbezeichner  Offsetkennfeld fuer Katheizen
+Typ             2D_MAP
+Funktionen      Kh
+Gruppen         NO_GROUP
+x (10 Werte)       n  [Upm]
+y (10 Werte)       rf  [-]
+Einheit         [°KW]
+
+     Y\X   |     600        800       1000       1250       1500       2000       2500       3000       4000       5000   
+           |                                                                                                              
+-----------+--------------------------------------------------------------------------------------------------------------
+   0,100   |     0,0        0,0        0,0        0,0        0,0        0,0        0,0        0,0        0,0        0,0   
+           |                                                                                                              
+..........................................................................................................................
+   0,150   |     0,0      -10,0      -10,0      -10,0      -10,0      -10,0       -5,0       -5,0       -5,0       -5,0   
+           |                                                                                             0,0*       0,0*  
+..........................................................................................................................
+   0,200   |     0,0      -10,0      -15,0      -15,0      -10,0      -10,0       -5,0       -5,0       -5,0       -5,0   
+           |                                                                                             0,0*       0,0*  
+..........................................................................................................................
+   0,250   |     0,0      -10,0      -20,0      -20,0      -18,0      -12,0       -5,0       -5,0       -5,0       -5,0   
+           |                         -18,0*     -18,0*     -15,0*     -10,0*                             0,0*       0,0*  
+..........................................................................................................................
+   0,300   |     0,0      -10,0      -20,0      -20,0      -18,0      -12,0       -5,0       -5,0       -5,0       -5,0   
+           |                         -18,0*     -18,0*     -15,0*     -10,0*                             0,0*       0,0*  
+..........................................................................................................................
+   0,350   |     0,0      -10,0      -20,0      -20,0      -18,0      -12,0       -5,0       -5,0       -5,0       -5,0   
+           |                         -18,0*     -18,0*     -15,0*     -10,0*                             0,0*       0,0*  
+..........................................................................................................................
+   0,400   |     0,0      -10,0      -20,0      -20,0      -18,0      -12,0       -5,0       -5,0       -5,0       -5,0   
+           |                         -18,0*     -18,0*     -15,0*     -10,0*                             0,0*       0,0*  
+..........................................................................................................................
+   0,450   |     0,0      -10,0      -15,0      -15,0      -15,0      -10,0       -5,0       -5,0       -5,0       -5,0   
+           |                                               -10,0*                                        0,0*       0,0*  
+..........................................................................................................................
+   0,500   |     0,0       -6,0      -10,0      -10,0      -10,0      -10,0       -5,0       -5,0       -5,0       -5,0   
+           |                                                                                             0,0*       0,0*  
+..........................................................................................................................
+   0,600   |     0,0       -6,0       -6,0       -6,0       -6,0       -6,0       -5,0       -5,0       -5,0       -5,0   
+           |                                                                                             0,0*       0,0*  
+..........................................................................................................................
+
+Inhaltliche Aenderung
+
+
+
+Element         KF_LAM_REG_K  / _MSS65-inj (3)
+Langbezeichner  Reglerverstaerkung
+Typ             2D_MAP
+Funktionen      Lambda
+Gruppen         NO_GROUP
+x (3 Werte)        abs(lam_delta_lim)  [-]
+y (3 Werte)        wf_mks_rel  [-]
+Einheit         [-]
+
+     Y\X   |   0,020      0,100      0,200   
+           |   0,015*     0,030*     0,060*  
+-----------+---------------------------------
+   0,000   |   -0,70      -0,70      -0,30   
+   0,100*  |   -0,30*     -0,50*     -0,80*  
+.............................................
+   0,100   |   -0,50      -0,40      -0,20   
+   0,200*  |   -0,10*     -0,20*     -0,30*  
+.............................................
+   0,200   |   -0,01      -0,01      -0,10   
+   0,500*  |                         -0,01*  
+.............................................
+
+Inhaltliche Aenderung
+
+
+
+Element         KF_LAM_SOLL_GRUND  / _MSS65-inj (3)
+Langbezeichner  SOLL-Lambda - Normalbetrieb
+Typ             2D_MAP
+Funktionen      Lambda
+Gruppen         NO_GROUP
+x (8 Werte)        n  [Upm]
+y (8 Werte)        Rf  [-]
+Einheit         [-]
+
+     Y\X   |    1000       2000       3000       4000       5000       6000       7000       8000   
+           |                                                                                        
+-----------+----------------------------------------------------------------------------------------
+   0,200   |   1,011      1,011      1,011      1,000      0,990      0,990      0,990      0,990   
+           |                                                                                        
+....................................................................................................
+   0,300   |   1,011      1,011      1,011      1,000      0,990      0,990      0,990      0,990   
+           |                                                                                        
+....................................................................................................
+   0,400   |   1,011      1,011      1,011      1,000      0,990      0,990      0,990      0,990   
+           |                                                                                        
+....................................................................................................
+   0,500   |   1,011      1,011      1,011      1,000      0,990      0,990      0,990      0,990   
+           |                                                                                        
+....................................................................................................
+   0,600   |   1,011      1,011      1,011      1,000      0,990      0,990      0,990      0,990   
+           |                                                                                        
+....................................................................................................
+   0,700   |   1,011      1,011      1,011      1,000      0,990      0,990      0,990      0,990   
+           |                                                                                        
+....................................................................................................
+   0,800   |   0,985      0,985      0,985      0,985      0,985      0,985      0,985      0,985   
+           |   1,000*     1,000*     1,000*                                                         
+....................................................................................................
+   1,000   |   0,985      0,985      0,985      0,985      0,985      0,985      0,985      0,985   
+           |   1,000*     1,000*     1,000*                                                         
+....................................................................................................
+
+Inhaltliche Aenderung
+
+
+
+Element         KF_SA_T_TRIG_MAX  / _MSS65-inj (3)
+Langbezeichner  Saugrohrdruckdelta
+Typ             2D_MAP
+Funktionen      sa_we
+Gruppen         NO_GROUP
+x (4 Werte)        tmot_loc  [°C]
+y (6 Werte)        n  [Upm]
+Einheit         [s]
+
+     Y\X   |     0,0       20,0       60,0       80,0   
+           |                                            
+-----------+--------------------------------------------
+    1000   |    1,00       0,50       0,30       0,20   
+           |                                            
+........................................................
+    2000   |    1,00       0,50       0,30       0,20   
+           |                                            
+........................................................
+    3000   |    1,00       0,50       0,30       0,20   
+           |                                            
+........................................................
+    4000   |    1,00       0,50       0,30       0,20   
+           |                                            
+........................................................
+    5000   |    1,00       0,50       0,30       0,20   
+           |                                            
+........................................................
+    6000   |    1,00       0,50       0,30       0,20   
+           |                                     0,00*  
+........................................................
+
+Inhaltliche Aenderung
+
+
+
+Element         KF_TI_PHI_ENDE_GRUND  / _MSS65-inj (3)
+Langbezeichner  Vorlagerungswinkel aus Grundkennfeld
+Typ             2D_MAP
+Funktionen      Einspritzung
+Gruppen         NO_GROUP
+x (6 Werte)        n  [Upm]
+y (5 Werte)        psau_rel  [%]
+Einheit         [°KW]
+
+     Y\X   |     800       1000       1250       1600       2400       5000   
+           |                                                                  
+-----------+------------------------------------------------------------------
+   10,00   |   390,0      440,0      350,0      340,0      410,0      410,0   
+           |                                                                  
+..............................................................................
+   20,00   |   390,0      440,0      350,0      340,0      370,0      370,0   
+           |                                                                  
+..............................................................................
+   50,00   |   440,0      430,0      390,0      370,0      350,0      350,0   
+           |                                                                  
+..............................................................................
+   70,00   |   410,0      390,0      430,0      390,0      350,0      350,0   
+           |   350,0*     350,0*     350,0*     350,0*                        
+..............................................................................
+   90,00   |   500,0      530,0      500,0      470,0      350,0      350,0   
+           |   350,0*     350,0*     350,0*     350,0*     300,0*     300,0*  
+..............................................................................
+
+Inhaltliche Aenderung
+
+
+
+Element         KF_VAN_KH_SOLL_A  / _MSS65-inj (3)
+Langbezeichner  Katheizkennfeld Vanos Sollwert
+Typ             2D_MAP
+Funktionen      Vanos
+Gruppen         NO_GROUP
+x (16 Werte)       n  [Upm]
+y (12 Werte)       dr_rel_1of2_  [%]
+Einheit         [°KW]
+
+     Y\X   |     800       1000       1600       2800       2900       3200       3700       4100       4300       4500   
+           |                                                                                                              
+-----------+--------------------------------------------------------------------------------------------------------------
+    2,00   |   128,0      128,0      128,0      128,0      128,0      128,0      128,0      128,0      128,0      128,0   
+           |   120,0*     120,0*     120,0*     120,0*     125,0*                                                         
+..........................................................................................................................
+    5,00   |   128,0      128,0      128,0      128,0      128,0      128,0      128,0      128,0      128,0      128,0   
+           |   120,0*     120,0*     120,0*     120,0*     125,0*                                                         
+..........................................................................................................................
+   10,00   |   128,0      128,0      128,0      128,0      128,0      128,0      128,0      128,0      128,0      128,0   
+           |   120,0*     120,0*     120,0*     120,0*     125,0*                                                         
+..........................................................................................................................
+   15,00   |   128,0      128,0      128,0      128,0      127,7      126,8      127,0      120,4      118,2      116,6   
+           |   120,0*     120,0*     120,0*     120,0*     125,0*                                                         
+..........................................................................................................................
+   20,00   |   128,0      128,0      125,8      123,1      120,4      116,6      107,0      100,4       96,2       94,0   
+           |   120,0*     120,0*     117,8*     115,1*     116,0*                                                         
+..........................................................................................................................
+   25,00   |   128,0      128,0      121,9      109,8      104,2      102,8       98,6       95,3       96,3       93,8   
+           |   120,0*     120,0*     113,9*     101,8*     102,0*                                                         
+..........................................................................................................................
+   30,00   |   128,0      128,0      118,1      102,4       98,9       99,9       97,6       94,5       95,4       94,3   
+           |   120,0*     120,0*     110,1*      94,4*                                                                    
+..........................................................................................................................
+   40,00   |   127,6      120,1      109,4      109,1      104,3       97,9       99,3       98,7      101,2       98,0   
+           |   119,6*     112,1*     101,4*     101,1*                                                                    
+..........................................................................................................................
+   50,00   |   119,6      105,7      101,5      100,8       98,0       93,9      101,0      101,8      100,9      100,7   
+           |   111,6*      97,7*      93,5*      94,0*                                                                    
+..........................................................................................................................
+   60,00   |   112,5      105,0       94,3       94,0       93,9       94,0      106,8      101,5      100,6       99,0   
+           |   104,5*      97,0*      86,3*      86,0*                                                                    
+..........................................................................................................................
+   80,00   |   112,5      105,0      105,0      105,0       94,1       98,0      102,3      105,0      105,0      105,0   
+           |   104,5*      97,0*      97,0*      97,0*                                                                    
+..........................................................................................................................
+  100,00   |   113,0      108,9      123,8      125,6       95,5      110,7      118,6      115,2      119,0      117,8   
+           |                                                                                                              
+..........................................................................................................................
+
+     Y\X   |    5000       5600       6100       6500       6900       8000   
+           |                                                                  
+-----------+------------------------------------------------------------------
+    2,00   |   128,0      128,0      128,0      128,0      128,0      128,0   
+           |                                                                  
+..............................................................................
+    5,00   |   128,0      128,0      128,0      128,0      128,0      128,0   
+           |                                                                  
+..............................................................................
+   10,00   |   128,0      128,0      128,0      128,0      128,0      128,0   
+           |                                                                  
+..............................................................................
+   15,00   |   122,4      124,7      121,2      123,9      128,7      126,6   
+           |                                                                  
+..............................................................................
+   20,00   |   107,9      112,1      118,5      108,6      124,8      121,0   
+           |                                                                  
+..............................................................................
+   25,00   |   100,2       98,8      121,5       96,1      118,9      116,7   
+           |                                                                  
+..............................................................................
+   30,00   |    95,4       95,9      106,3      101,5      109,3      113,0   
+           |                                                                  
+..............................................................................
+   40,00   |    99,6       99,5      102,7      103,7      103,0      113,0   
+           |                                                                  
+..............................................................................
+   50,00   |    96,9       98,6      101,0      102,3      105,0      113,0   
+           |                                                                  
+..............................................................................
+   60,00   |    96,3       99,7      100,1      103,9      111,3      113,5   
+           |                                                                  
+..............................................................................
+   80,00   |   105,0      105,0      112,9      112,8      114,6      110,0   
+           |                                                                  
+..............................................................................
+  100,00   |   120,5      114,8      114,3      114,4      116,3      108,6   
+           |                                                                  
+..............................................................................
+
+Inhaltliche Aenderung
+
+
+
+Element         KF_VAN_KH_SOLL_E  / _MSS65-inj (3)
+Langbezeichner  Katheizkennfeld Vanos Sollwert
+Typ             2D_MAP
+Funktionen      Vanos
+Gruppen         NO_GROUP
+x (16 Werte)       n  [Upm]
+y (12 Werte)       dr_rel_1of2_  [%]
+Einheit         [°KW]
+
+     Y\X   |     800       1000       1600       2800       2900       3200       3700       4100       4300       4500   
+           |                                                                                                              
+-----------+--------------------------------------------------------------------------------------------------------------
+    2,00   |   140,0      140,0      140,0      140,0      140,0      140,0      140,0      140,0      140,0      140,0   
+           |   134,0*     134,0*     134,0*                                                                               
+..........................................................................................................................
+    5,00   |   140,0      140,0      140,0      138,2      138,5      140,0      140,0      140,0      140,0      140,0   
+           |   134,0*     134,0*     134,0*                                                                               
+..........................................................................................................................
+   10,00   |   135,0      135,0      136,4      131,6      133,6      138,1      141,2      136,8      138,8      120,7   
+           |   129,0*     129,0*     130,4*                                                                               
+..........................................................................................................................
+   15,00   |   135,0      135,0      138,2      131,8      132,8      132,5      139,7      124,2      130,8      102,5   
+           |   129,0*     129,0*     132,2*                                                                               
+..........................................................................................................................
+   20,00   |   133,7      127,8      132,2      130,4      130,9      119,2      103,8       99,4      114,7       98,0   
+           |   127,7*     121,8*     126,2*                                                                               
+..........................................................................................................................
+   25,00   |   130,8      114,8      126,0      123,3      126,8      102,1       93,6      105,5      112,6      105,6   
+           |   124,8*     108,8*     120,0*                                                                               
+..........................................................................................................................
+   30,00   |   127,9      101,8      119,7      115,7      119,6       93,7       99,3      116,2      116,7      118,5   
+           |   121,9*      95,8*     113,7*                                                                               
+..........................................................................................................................
+   40,00   |   119,0       98,0       94,8      100,0       98,0       85,5      109,4      110,3      110,7      110,0   
+           |   113,0*      92,0*      88,8*                                                                               
+..........................................................................................................................
+   50,00   |   106,2      112,2       85,0       94,8       85,9       89,6      103,7      111,0      111,1      113,8   
+           |                                                                                                              
+..........................................................................................................................
+   60,00   |   105,0      103,4       93,8       96,3       87,3       92,5      104,3      112,2      114,1      117,6   
+           |                                                                                                              
+..........................................................................................................................
+   80,00   |   110,0      103,4       94,5       94,5       86,3       98,2      113,1      110,0      107,0      104,7   
+           |                                                                                                              
+..........................................................................................................................
+  100,00   |   133,3      133,3       88,7      100,0       83,0       81,5       81,9       82,9       90,1       95,6   
+           |                                                                                                              
+..........................................................................................................................
+
+     Y\X   |    5000       5600       6100       6500       6900       8000   
+           |                                                                  
+-----------+------------------------------------------------------------------
+    2,00   |   140,0      140,0      140,0      140,0      140,0      140,0   
+           |                                                                  
+..............................................................................
+    5,00   |   140,0      140,0      140,0      140,0      140,0      140,0   
+           |                                                                  
+..............................................................................
+   10,00   |   130,0      136,7      139,2      140,0      140,0      140,0   
+           |                                                                  
+..............................................................................
+   15,00   |   123,5      120,7      124,7      113,7      132,7      129,6   
+           |                                                                  
+..............................................................................
+   20,00   |   119,6      101,8      112,1       96,7      125,0      119,4   
+           |                                                                  
+..............................................................................
+   25,00   |   104,6       91,3      111,0      108,0      121,0      115,7   
+           |                                                                  
+..............................................................................
+   30,00   |   121,1       82,5      111,6      121,2      117,2      112,0   
+           |                                                                  
+..............................................................................
+   40,00   |   115,0       91,5      106,8      117,1      119,1      111,6   
+           |                                                                  
+..............................................................................
+   50,00   |   107,8       85,6      108,8      122,0      122,0      111,5   
+           |                                                                  
+..............................................................................
+   60,00   |    99,5      107,0      117,9      120,9      121,2      113,1   
+           |                                                                  
+..............................................................................
+   80,00   |   105,7      105,0      108,0      110,4      113,4      114,4   
+           |                                                                  
+..............................................................................
+  100,00   |    96,8       97,8      101,6      109,6      108,6      116,6   
+           |                                                                  
+..............................................................................
+
+Inhaltliche Aenderung
+
+
+
+Element         KF_WF_ASP_POS  / _MSS65-inj (3)
+Langbezeichner  Anzahl ASP f. WF-Aufbau
+Typ             2D_MAP
+Funktionen      Wandfilm
+Gruppen         NO_GROUP
+x (6 Werte)        tsgrw  [°C]
+y (5 Werte)        n  [Upm]
+Einheit         [ASP]
+
+     Y\X   |   -20,0        0,0       10,0       20,0       40,0       80,0   
+           |                                                                  
+-----------+------------------------------------------------------------------
+    1000   |      70         70         30         30         20         20   
+           |                            80*        80*        80*        80*  
+..............................................................................
+    2000   |      70         70         35         35         25         25   
+           |                            80*        80*        80*        80*  
+..............................................................................
+    3000   |      70         70         40         40         30         30   
+           |                            80*        80*        80*        80*  
+..............................................................................
+    4000   |      70         70         50         50         40         40   
+           |                            80*        80*        80*        80*  
+..............................................................................
+    5000   |      70         70         60         60         50         50   
+           |                            80*        80*        80*        80*  
+..............................................................................
+
+Inhaltliche Aenderung
+
+
+
+Element         KF_WF_SOLL_GRUND  / _MSS65-inj (3)
+Langbezeichner  SOLL-Grundwandfilmmasse
+Typ             2D_MAP
+Funktionen      Wandfilm
+Gruppen         NO_GROUP
+x (7 Werte)        tsgrw  [°C]
+y (8 Werte)        psau  [mbar]
+Einheit         [mg]
+
+     Y\X   |   -25,0      -10,0       10,0       20,0       40,0       80,0      100,0   
+           |                                                                             
+-----------+-----------------------------------------------------------------------------
+   300,0   |  684,00     614,00     340,00     160,00      70,00      50,00      30,00   
+           |                                                                     34,00*  
+.........................................................................................
+   400,0   |  704,00     634,00     350,00     170,00      80,00      55,00      36,00   
+           |                                                                     40,00*  
+.........................................................................................
+   500,0   |  764,00     674,00     380,00     184,00      90,00      60,00      43,00   
+           |                                                                     45,00*  
+.........................................................................................
+   600,0   |  844,00     724,00     420,00     212,00     104,00      71,00      60,00   
+           |                                                          64,00*     55,00*  
+.........................................................................................
+   700,0   |  960,00     776,00     462,00     266,00     136,00      85,00      71,00   
+           |                                              120,00*     69,00*     59,00*  
+.........................................................................................
+   800,0   | 1070,00     883,75     549,75     324,75     185,00     101,00      84,00   
+           |                                              169,00*     85,00*     74,00*  
+.........................................................................................
+   900,0   | 1190,00     993,75     639,75     399,75     245,00     150,00     100,00   
+           |                                              229,00*    134,00*     84,00*  
+.........................................................................................
+  1000,0   | 1290,00    1083,75     721,75     484,75     311,00     201,00     120,00   
+           |                                              295,00*    185,00*    104,00*  
+.........................................................................................
+
+Inhaltliche Aenderung
+
+
+
+Element         KL_EVAP_TV  / _MSS65-ign (3)
+Langbezeichner  Tastverhältnis
+Typ             1D_MAP
+Funktionen      EVAP-Klappen
+Gruppen         NO_GROUP
+x (4 Werte)        evap_time  [s]
+Einheit         [%]
+
+    0,25       0,50       1,00       1,50   
+                                            
+--------------------------------------------
+   100,0       50,0       25,0       25,0   
+                          45,3*      45,3*  
+
+Inhaltliche Aenderung
+
+
+
+Element         KL_KH_TZ_TMOT_F  / _MSS65-ign (3)
+Langbezeichner  Faktor Katheizen auf den Offset
+Typ             1D_MAP
+Funktionen      Kh
+Gruppen         NO_GROUP
+x (6 Werte)        temperatur  [°C]
+Einheit         [-]
+
+   -10,0        0,0       10,0       18,0       40,0       75,0   
+                                                                  
+------------------------------------------------------------------
+   0,000      0,500      0,700      1,000      1,000      0,700   
+                                                          0,500*  
+
+Inhaltliche Aenderung
+
+
+
+Element         KL_SLP_DELAY_TMOT  / _MSS65-inj (3)
+Langbezeichner  SLP-Delay abhaengig von tmot
+Typ             1D_MAP
+Funktionen      SLP
+Gruppen         NO_GROUP
+x (6 Werte)        tmot  [°C]
+Einheit         [s]
+
+   -11,0      -10,0       14,0       15,0       40,0       41,0   
+                                                                  
+------------------------------------------------------------------
+  100,00     100,00     100,00       3,00       3,00     100,00   
+                                     4,00*      4,00*             
+
+Inhaltliche Aenderung
+
+
+
+Element         KL_SMG_KUPP_M_AUF_Z1  / _MSS65-ign (3)
+Langbezeichner  Aufregel-Kennlinie Zug1
+Typ             1D_MAP
+Funktionen      SMG
+Gruppen         NO_GROUP
+x (8 Werte)        t_norm  [%t_END]
+Einheit         [%FW]
+
+     0,0        3,1       10,2       20,3       39,8       70,3       89,8      100,0   
+                                                                                        
+----------------------------------------------------------------------------------------
+     0,0        7,8       16,4       28,1       50,0       80,5       96,1      100,0   
+     3,1*      10,2*      21,1*      29,7*      46,9*      82,0*                        
+
+Inhaltliche Aenderung
+
+
+
+Element         KL_SMG_KUPP_REG_I_AUF  / _MSS65-ign (3)
+Langbezeichner  Regler fuer AUF
+Typ             1D_MAP
+Funktionen      SMG
+Gruppen         NO_GROUP
+x (4 Werte)        n_diff  [Upm]
+Einheit         [Nms/Upm]
+
+       0        120        300        400   
+                                            
+--------------------------------------------
+  0,0000     0,0003     0,0002     0,0000   
+             0,0008*    0,0004*             
+
+Inhaltliche Aenderung
+
+
+
+Element         KL_SMG_KUPP_REG_I_ZU  / _MSS65-ign (3)
+Langbezeichner  Regler fuer ZU
+Typ             1D_MAP
+Funktionen      SMG
+Gruppen         NO_GROUP
+x (4 Werte)        n_diff  [Upm]
+Einheit         [Nms/Upm]
+
+       0        150        400       1000   
+                                            
+--------------------------------------------
+  0,0000     0,0001     0,0005     0,0003   
+                        0,0006*    0,0004*  
+
+Inhaltliche Aenderung
+
+
+
+Element         KL_SMG_MOT_DN_REG_P  / _MSS65-ign (3)
+Langbezeichner  P-Anteil des Gradientenreglers
+Typ             1D_MAP
+Funktionen      SMG
+Gruppen         NO_GROUP
+x (4 Werte)        n_diff  [Upm]
+Einheit         [Nms/Upm]
+
+     120        240        320        520   
+      80*       200*       400*       800*  
+--------------------------------------------
+   0,008      0,006      0,005      0,000   
+   0,020*     0,015*     0,012*     0,008*  
+
+Inhaltliche Aenderung
+
+
+
+Element         KL_SMG_MOT_DN_SOLL  / _MSS65-ign (3)
+Langbezeichner  Sollgradient (Betrag) des Gleichlauf-d_n-Reglers
+Typ             1D_MAP
+Funktionen      SMG
+Gruppen         NO_GROUP
+x (6 Werte)        n_diff  [Upm]
+Einheit         [Upm/s]
+
+       0        120        300        600       1200       3000   
+                 20*       150*       300*       600*      1200*  
+------------------------------------------------------------------
+     150        310       1020       2920       8000      10000   
+       0*       200*       400*      1200*      3200*             
+
+Inhaltliche Aenderung
+
+
+
+Element         KL_SMG_MOT_J_MOTOR  / _MSS65-ign (3)
+Langbezeichner  J-Motor
+Typ             1D_MAP
+Funktionen      SMG
+Gruppen         NO_GROUP
+x (3 Werte)        n_ziel  [Upm]
+Einheit         [Nms2]
+
+    1500       3000       6000   
+    2000*                        
+---------------------------------
+    0,01       0,20       0,12   
+               0,40*      0,20*  
+
+Inhaltliche Aenderung
+
+
+
+Element         KL_SMG_MOT_M_VOR_AUF  / _MSS65-ign (3)
+Langbezeichner  Vorausschau
+Typ             1D_MAP
+Funktionen      SMG
+Gruppen         NO_GROUP
+x (4 Werte)        n  [Upm]
+Einheit         [s]
+
+    1500       2000       4000       6000   
+                                            
+--------------------------------------------
+    0,14       0,12       0,06       0,04   
+    0,00*      0,00*      0,00*      0,08*  
+
+Inhaltliche Aenderung
+
+
+
+Element         KL_SMG_MOT_N_REG_D_DN  / _MSS65-ign (3)
+Langbezeichner  D-Anteil DOWN
+Typ             1D_MAP
+Funktionen      SMG
+Gruppen         NO_GROUP
+x (6 Werte)        n_soll  [Upm]
+Einheit         [Nm/Upm]
+
+    1000       1500       2000       2500       3000       4000   
+                                                                  
+------------------------------------------------------------------
+    0,80       0,90       1,20       1,20       0,60       0,00   
+    0,10*      0,10*      0,10*      0,10*      0,10*      0,10*  
+
+Inhaltliche Aenderung
+
+
+
+Element         KL_SMG_MOT_N_REG_D_UP  / _MSS65-ign (3)
+Langbezeichner  D-Anteil UP
+Typ             1D_MAP
+Funktionen      SMG
+Gruppen         NO_GROUP
+x (6 Werte)        n_soll  [Upm]
+Einheit         [Nm/Upm]
+
+    1000       1500       2000       2500       3000       4000   
+                                                                  
+------------------------------------------------------------------
+    0,20       0,20       0,00       0,00       0,00       0,00   
+    0,40*      0,30*      0,20*      0,10*      0,10*      0,10*  
+
+Inhaltliche Aenderung
+
+
+
+Element         KL_SMG_MOT_N_REG_P_DN  / _MSS65-ign (3)
+Langbezeichner  P-Anteil DOWN
+Typ             1D_MAP
+Funktionen      SMG
+Gruppen         NO_GROUP
+x (6 Werte)        n_soll  [Upm]
+Einheit         [Nm/Upm]
+
+    1000       1500       2000       2500       3000       4600   
+                                                                  
+------------------------------------------------------------------
+    0,08       0,09       0,09       0,10       0,10       0,10   
+    0,01*      0,01*      0,03*      0,04*      0,04*      0,04*  
+
+Inhaltliche Aenderung
+
+
+
+Element         KL_SMG_MOT_N_REG_P_KO  / _MSS65-ign (3)
+Langbezeichner  Korrektur P-Faktor
+Typ             1D_MAP
+Funktionen      SMG
+Gruppen         NO_GROUP
+x (6 Werte)        n_diff  [Upm]
+Einheit         [-]
+
+       0         40         80        240        400        700   
+                                                                  
+------------------------------------------------------------------
+    1,00       1,00       1,20       1,40       1,50       1,60   
+                                     1,50*      1,80*      2,99*  
+
+Inhaltliche Aenderung
+
+
+
+Element         KL_SMG_MOT_N_REG_P_UP  / _MSS65-ign (3)
+Langbezeichner  P-Anteil UP
+Typ             1D_MAP
+Funktionen      SMG
+Gruppen         NO_GROUP
+x (6 Werte)        n_soll  [Upm]
+Einheit         [Nm/Upm]
+
+    1000       1500       2000       2500       3000       4600   
+                                                                  
+------------------------------------------------------------------
+    0,10       0,10       0,16       0,18       0,21       0,24   
+    0,04*      0,05*      0,12*      0,20*      0,40*      0,30*  
+
+Inhaltliche Aenderung
+

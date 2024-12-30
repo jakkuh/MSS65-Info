@@ -1,0 +1,137 @@
+
+
+Dienstag, 15. Apr 2003, 18:45 Vers214 S85_BG2_PST_Master_081
+
+abgeleitet aus Fahrzeugdatenstand 081
+
+
+
+Mittwoch, 16. Apr 2003, 8:45 Vers214 S85_BG2_PST_Master_082
+
+Abstand des Klopffensters vom Zündwinkel ab 5500 40 statt 30 Grad KW
+
+
+
+Mittwoch, 23. Apr 2003, 13:20 Vers214 S85_BG2_PST_Master_083
+
+KF_PKSR_TV_QSOLL_PSOLL für 2 EKP parallel appliziert
+
+K_PWG_NORM von 33 auf 25%
+
+KF_EGAS_SOLL_AQ ab rf 0.65 rf-Stützstellen um ca 4% erhöht zum anfetten
+
+Korrektur der Einspritzung von Timmi (Offset -0.26ms)
+KL_TI_SOLL_QSTAT_F proportionaler Ventilparameter Device1 - Physikalisches Modell
+	pdiff  [bar]
+	2.000	3.000	3.500	4.000	4.500	5.000	5.500	6.500	
+	KL_TI_SOLL_QSTAT_F proportionaler Ventilparameter [mg/ms]
+	2.876	3.327	3.551	3.775	3.998	4.220	4.442	4.884	
+f2	2.616	3.067	3.291	3.516	3.738	3.960	4.183	4.624	
+
+
+
+
+Donnerstag, 24. Apr 2003 13.10 Vers214_S85_BG2_PST_Master_093
+
+BG2-Kennfelder aus e60_093 hinzu
+
+
+
+Donnerstag, 24. Apr 2003, 13:34 Vers214_S85_BG2_PST_Master_094
+für Betrieb am Motorprüfstand ausgeschaltet:
+	K_TMOT_OBD_CFG Einschalten der Diagnose Device2 [-] - Parameter
+	OBD ein	01	
+f2	OBD aus	00	
+
+
+
+Freitag, 25. Apr 2003, 09:18 Vers214_S85_BG2_PST_Master_095
+Fehler in Kennlinie bei Lambdawert 1.005
+	KL_LAM_IST IST-Lambda Device1 - Physikalisches Modell
+	1	1	24	
+
+	lavk_ip_korr  [mA]
+	-2.0898	-1.4844	-1.1328	-0.8008	-0.4980	-0.4492	-0.3906	-0.3418	-0.2832	-0.2344	-0.1855	-0.1367	-0.0879	-0.0488	-0.0098	0.0000	0.0391	0.0586	0.0781	0.0977	0.2051	0.3516	0.7129	1.3965	
+
+	KL_LAM_IST IST-Lambda [-]
+	0.680	0.750	0.800	0.850	0.900	0.910	0.920	0.930	0.940	0.950	0.960	0.970	0.978	0.990	1.000	1.050	1.020	1.030	1.040	1.050	1.100	1.180	1.430	2.420	
+f2																1.005	
+
+
+
+Montag, 28. Apr 2003, 18:03 Vers214_S85_BG2_PST_Master_096
+
+analog Fahrzeugstand_MS96:
+	KF_MD_IND_OPT optimales Moment bei LA 1 Device2 - Physikalisches Modell
+	1	12	18	
+
+	rf_m relative Fuellung Mittel zwischen Bank 1 und 2 [-]
+
+		n Motordrehzahl [Upm]
+		600	800	1000	1600	2200	2800	2900	3200	3400	3700	4100	4500	5000	5600	6100	6500	6900	8000	
+
+		KF_MD_IND_OPT optimales Moment bei LA 1 [Nm]
+	0.000	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	
+	0.100	55.0	56.8	53.6	54.3	54.2	55.9	56.4	56.5	56.0	55.7	55.5	55.3	56.0	54.6	53.0	53.0	53.0	53.0	
+f2		56.8	
+	0.200	110.0	106.1	100.5	96.8	82.7	98.5	101.9	106.7	100.5	101.5	94.1	97.2	94.4	90.4	105.0	105.0	105.0	105.0	
+f2		106.1	
+	0.300	148.0	157.1	155.9	165.9	152.8	161.1	161.9	163.8	161.7	165.0	163.5	168.0	164.6	164.5	160.8	155.0	155.0	155.0	
+f2		157.1	
+	0.400	205.0	208.1	203.8	218.8	204.4	209.5	210.2	215.0	224.9	222.8	225.0	224.8	222.9	227.1	227.8	227.7	196.8	194.0	
+f2		208.1																227.7	227.7	
+	0.500	230.0	260.2	282.7	270.4	266.0	278.6	278.6	283.2	282.2	280.3	281.2	280.5	276.8	287.4	284.6	280.9	281.5	284.0	
+f2		260.2																280.9	280.9	
+	0.600	289.3	312.2	315.1	319.0	313.9	329.8	326.4	336.7	333.3	335.0	336.6	334.4	333.4	343.0	341.7	337.0	342.3	345.0	
+f2		312.2																337.0	337.0	
+	0.700	340.4	343.8	344.7	377.2	371.9	375.6	371.6	388.6	381.5	384.6	385.8	384.2	386.1	395.4	399.0	395.1	389.9	378.0	
+f2		377.2	377.2	377.2			399.0											395.1	395.1	
+	0.800	344.0	373.0	391.0	397.1	405.0	412.6	413.8	434.1	438.9	431.9	442.2	439.6	442.8	453.0	455.4	459.1	440.0	440.0	
+f2		422.3	422.3	422.3	422.3	446.4	454.3	456.0	466.2	469.4	469.7	477.3	476.9	483.6	494.2	498.8	493.9	493.9	493.9	
+	0.900	384.0	404.0	430.0	429.4	451.4	462.3	464.0	467.5	469.4	473.6	481.2	492.6	493.2	495.0	495.0	495.0	495.0	495.0	
+f2		475.1	475.1	475.1	475.1	502.2	514.0	516.0	524.4	528.0	528.4	533.6	536.9	544.0	551.4	554.6	566.5	572.9	569.9	
+	1.000	424.0	446.0	477.0	461.6	497.7	512.0	514.0	517.6	519.2	524.0	533.7	548.0	547.5	550.0	550.0	550.0	550.0	550.0	
+f2		522.6	522.6	522.6	522.6	552.4	565.4	567.6	576.8	580.8	581.2	587.0	590.6	598.4	612.6	616.2	629.4	636.5	633.3	
+	1.200	501.8	531.2	571.0	526.1	590.5	611.5	614.3	622.4	627.8	641.8	658.3	656.1	650.0	650.0	650.0	650.0	650.0	650.0	
+f2	1.100	574.9	574.9	574.9	574.9	607.6	621.9	624.4	634.5	638.9	639.3	645.7	649.7	658.2	673.9	677.8	692.3	700.2	696.6	
+
+
+
+
+
+
+Beginn des automatischen Vergleichs am Thu May  8 16:27:11 2003:
+ 
+	K_LAVK_OBD_TL_CFG Freigabe OBD-TL/VL-Diagnose Device1 [-] - Parameter
+	OBD-TL/VL aktiv	0001	
+f2	OBD-TL/VL inaktiv	0000	
+
+ 
+	K_PKS_ERSATZ Ersatzwert Kraftstoffdruck Device1 [bar] - Parameter
+	6.000	1770	
+f2	7.000	1B58	
+
+
+Ende des automatischen Vergleichs gestartet am Thu May  8 16:27:11 2003
+
+Donnerstag, 8. Mai 2003, 16:27 S85_BG2_PST MS97
+modified on Donnerstag, 8. Mai 2003, 16:27 S85_BG2_PST to MS98
+
+
+
+
+Beginn des automatischen Vergleichs am Thu May  8 16:43:30 2003:
+Prüfstandsdaten für IAV wieder zurückgesetzt
+	K_KIS_CFG KIS-Konfiguration Device2 [-] - Parameter
+	Senden	01	
+f2	Aus	00	
+
+ 
+	K_PWG1_NORM Normierung Potentiometerspannung - %-Pedalwert 1 Device2 [%/V] - Parameter
+	35.000	0DAC	
+f2	25.000	09C4	
+
+Ende des automatischen Vergleichs gestartet am Thu May  8 16:43:30 2003
+
+Donnerstag, 8. Mai 2003, 16:43 S85_BG2_PST MS98
+modified on Donnerstag, 8. Mai 2003, 16:43 S85_BG2_PST to MS99

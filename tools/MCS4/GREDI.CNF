@@ -1,0 +1,29 @@
+0            ;   reserve
+1            ; Emulation module version number
+0            ; Path name for recorder file e.g.  E:\LONGTIME
+0            ; 0=Autom. One/Two Model Mode, 1=always One Model
+500          ; Cursor blink period [ms]
+0            ; 0=Autom. Recorder File Format 2 or 3, 1=always 3
+0            ; 0=Autom. Cursor Choice, 1=blinking, 2=non-blinking
+0            ;   reserve
+0            ;   reserve
+1            ; NEW : MCS.3+ LPTnr (MCS.3=0)
+0            ; Bit0 = Ignore COM Fifos (DOS Gredi Comm flags)
+1            ; MCS.3 COMnr 1 or 2,  or  Nr IRQ,  or Addr IRQ e.g $3E0 15  .
+0 ; 57600    ; MCS.3 Baudrate 0=auto,38400,57600,115200
+$D000        ; PUMA DPR Address
+200          ; Data Aquisition Rate in ROM Editor without Recording [ms]
+1            ; PUMA COM 1,2  0=DPR Coupling
+9600         ; PUMA COM Baudrate
+$1400        ; PUMA COM/DPR Buffersize
+0            ; Ignore Memory: Bit0=XMS, Bit1=EMS, Bit2=INT15
+1            ; reserve fast sampling mode enabled
+0            ; PUMA DPR Config: 1 = use Header/Buffersize
+$40          ; PUMA DPR Headersize
+0            ;   reserve
+0            ; Backup: 0 = in Background, 1 = on Storing, 2 = None
+5            ;   reserve
+32           ; Win-GREDI: max. label length 0=dflt, 20..32
+1            ; DOS-GREDI: Bit0=Shft.F1 Recorder StartOnly, Shft.F7 to Stop
+0            ;   reserve
+0            ;   reserve

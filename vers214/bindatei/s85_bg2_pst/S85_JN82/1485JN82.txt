@@ -1,0 +1,9 @@
+
+Dienstag, 15. Apr 2003, 18:45 Vers214 S85_BG2_PST_Master_081
+
+abgeleitet aus Fahrzeugdatenstand 081
+
+
+Mittwoch, 16. Apr 2003, 8:45 Vers214 S85_BG2_PST_Master_082
+
+Abstand des Klopffensters vom Zündwinkel ab 5500 40 statt 30 Grad KW

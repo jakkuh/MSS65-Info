@@ -1,0 +1,8 @@
+
+Donnerstag, 20. Jun 2002, 08:02
+Basis V113_MÖSBAUER gemischt mit V112_HA_23 für FZV-Fahrzeug
+
+Donnerstag, 20. Jun 2002, 10:43
+Basis 01 + KF_WF_SOLL_GRUND red.
+KL_WF_ASP_NEG_ erhöht
+K_RF_START -> 0.7
